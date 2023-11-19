@@ -75,19 +75,17 @@ stages:
 
         - script: |
             python -m pip install --upgrade pip
-            pip install -e .
-            pip install .[plot]
-            pip install .[parametric_umap]
-            pip install pytest  pytest-azurepipelines pytest-cov pytest-benchmark coveralls
+            pip install poetry
+            poetry install --all-extras
           displayName: 'Install package'
 
         - script: |
             # export NUMBA_DISABLE_JIT=1 # Disable numba coverage so tests run on time for now.
-            pytest umap/tests --show-capture=no -v --disable-warnings --junitxml=junit/test-results.xml --cov=umap/ --cov-report=xml --cov-report=html
+            poetry run pytest tests/ --show-capture=no -v --disable-warnings --junitxml=junit/test-results.xml --cov=src/umap/ --cov-report=xml --cov-report=html
           displayName: 'Run tests'
 
         - bash: |
-            coveralls
+            poetry run coveralls
           displayName: 'Publish to coveralls'
           condition: and(succeeded(), eq(variables.triggeredByPullRequest, false)) # Don't run this for PRs because they can't access pipeline secrets
           env:
@@ -115,15 +113,16 @@ stages:
 
         - script: |
             python -m pip install --upgrade pip
-            pip install wheel
-            pip install -e .
+            pip install poetry
+            poetry install
           displayName: 'Install package locally'
         
         - bash: |
-            python setup.py sdist bdist_wheel
+            poetry build
             ls -l dist/
           displayName: 'Build package'
-
+        
+        # FIXME: Fix the version number retrieval 
         - bash: |
             export PACKAGE_VERSION="$(python setup.py --version)"
             echo "Package Version: ${PACKAGE_VERSION}"
@@ -142,9 +141,9 @@ stages:
           inputs:
             secureFile: 'pypirc'  
 
+        # FIXME: Configure properly this
         - script: |
-            pip install twine
-            twine upload --repository testpypi --config-file $(PYPIRC_CONFIG.secureFilePath) dist/*
+            poetry publish --repository testpypi dist/*
           displayName: 'Upload to PyPI'
           condition: and(succeeded(), eq(variables['Build.SourceBranchName'], variables['packageVersionFormatted']))
 
