@@ -18,6 +18,23 @@ numba = "^0.57"
 pynndescent = "^0.5"
 tqdm = "^4.66.1"
 
+# Plot dependencies
+pandas = { version = "^2.0.0", optional = true }
+matplotlib = { version = "^3.6.0", optional = true }
+scikit-image = { version = "^0.21.0", optional = true }
+seaborn = { version = "^0.13.0", optional = true }
+datashader = { version = "^0.15.0", optional = true }
+bokeh = { version = "^2.4.3", optional = true }
+holoviews = { version = "^1.17.0", optional = true }
+colorcet = { version = "^3.0.0", optional = true }
+
+# Paremetric UMAP dependencies
+tensorflow = { version = "^2.2", optional = true }
+tensorflow-probability = { version = "^0.20", optional = true }
+
+# TBB dependencies
+tbb = { version = "^2019.0", markers = "platform_machine == 'x86_64'", optional = true}
+
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
 
@@ -29,23 +46,10 @@ pillow = "^10.0"
 matplotlib = "^3.6"
 numpydoc = "^1.6"
 
-[tool.poetry.group.plot.dependencies]
-pandas = "^2.0.0"
-matplotlib = "^3.6.0"
-scikit-image = "^0.21.0"
-seaborn = "^0.13.0"
-datashader = "^0.15.0"
-bokeh = "^2.4.3"
-holoviews = "^1.17.0"
-colorcet = "^3.0.0"
-
-[tool.poetry.group.parametric_umap.dependencies]
-tensorflow = "^2.1"
-tensorflow-macos = { version = "^2.1", platform = "darwin" }
-tensorflow-probability = "^0.20"
-
-[tool.poetry.group.tbb.dependencies]
-tbb = { version = "^2019.0", markers = "platform_machine == 'x86_64'" }
+[tool.poetry.extras]
+parametric_umap = ["tensorflow", "tensorflow-probability"]
+tbb = ["tbb"]
+plot = ["pandas", "matplotlib", "scikit-image", "seaborn", "datashader", "bokeh", "holoviews", "colorcet"]
 
 [build-system]
 requires = ["poetry-core"]

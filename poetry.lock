@@ -4,7 +4,7 @@
 name = "absl-py"
 version = "2.0.0"
 description = "Abseil Python Common Libraries, see https://github.com/abseil/abseil-py."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "absl-py-2.0.0.tar.gz", hash = "sha256:d9690211c5fcfefcdd1a45470ac2b5c5acd45241c3af71eed96bc5441746c0d5"},
@@ -26,7 +26,7 @@ files = [
 name = "astunparse"
 version = "1.6.3"
 description = "An AST unparser for Python"
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "astunparse-1.6.3-py2.py3-none-any.whl", hash = "sha256:c2652417f2c8b5bb325c885ae329bdf3f86424075c4fd1a128674bc6fba4b8e8"},
@@ -58,7 +58,7 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 name = "bleach"
 version = "6.1.0"
 description = "An easy safelist-based HTML-sanitizing tool."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "bleach-6.1.0-py3-none-any.whl", hash = "sha256:3225f354cfc436b9789c66c4ee030194bee0568fbf9cbdad3bc8b5c26c5f12b6"},
@@ -76,7 +76,7 @@ css = ["tinycss2 (>=1.1.0,<1.3)"]
 name = "bokeh"
 version = "2.4.3"
 description = "Interactive plots and applications in the browser from Python"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "bokeh-2.4.3-py3-none-any.whl", hash = "sha256:104d2f0a4ca7774ee4b11e545aa34ff76bf3e2ad6de0d33944361981b65da420"},
@@ -96,7 +96,7 @@ typing-extensions = ">=3.10.0"
 name = "cachetools"
 version = "5.3.2"
 description = "Extensible memoizing collections and decorators"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "cachetools-5.3.2-py3-none-any.whl", hash = "sha256:861f35a13a451f94e301ce2bec7cac63e881232ccce7ed67fab9b5df4d3beaa1"},
@@ -217,7 +217,7 @@ files = [
 name = "click"
 version = "8.1.7"
 description = "Composable command line interface toolkit"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
@@ -231,7 +231,7 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 name = "cloudpickle"
 version = "3.0.0"
 description = "Pickler class to extend the standard pickle.Pickler functionality"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "cloudpickle-3.0.0-py3-none-any.whl", hash = "sha256:246ee7d0c295602a036e86369c77fecda4ab17b506496730f2f576d9016fd9c7"},
@@ -253,7 +253,7 @@ files = [
 name = "colorcet"
 version = "3.0.1"
 description = "Collection of perceptually uniform colormaps"
-optional = false
+optional = true
 python-versions = ">=2.7"
 files = [
     {file = "colorcet-3.0.1-py2.py3-none-any.whl", hash = "sha256:8daff01824ee9935fdf762d15c444a67d3e361ad4f8b738ad59ac9bf38f30600"},
@@ -361,7 +361,7 @@ tests = ["pytest", "pytest-cov", "pytest-xdist"]
 name = "dask"
 version = "2023.5.0"
 description = "Parallel PyData with Task Scheduling"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "dask-2023.5.0-py3-none-any.whl", hash = "sha256:32b34986519b7ddc0947c8ca63c2fc81b964e4c208dfb5cbf9f4f8aec92d152b"},
@@ -390,7 +390,7 @@ test = ["pandas[test]", "pre-commit", "pytest", "pytest-rerunfailures", "pytest-
 name = "datashader"
 version = "0.15.2"
 description = "Data visualization toolchain based on aggregating into a grid"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "datashader-0.15.2-py2.py3-none-any.whl", hash = "sha256:9af96d76bc7011c60b4e76177e283efe20e060278ecd81ce7005a4d80a4dc69e"},
@@ -424,7 +424,7 @@ tests = ["codecov", "fastparquet", "flake8", "nbconvert", "nbformat", "nbsmoke[v
 name = "datashape"
 version = "0.5.2"
 description = "A data description language."
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "datashape-0.5.2.tar.gz", hash = "sha256:2356ea690c3cf003c1468a243a9063144235de45b080b3652de4f3d44e57d783"},
@@ -439,7 +439,7 @@ python-dateutil = "*"
 name = "decorator"
 version = "5.1.1"
 description = "Decorators for Humans"
-optional = false
+optional = true
 python-versions = ">=3.5"
 files = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
@@ -450,7 +450,7 @@ files = [
 name = "dm-tree"
 version = "0.1.8"
 description = "Tree is a library for working with nested data structures."
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "dm-tree-0.1.8.tar.gz", hash = "sha256:0fcaabbb14e7980377439e7140bd05552739ca5e515ecb3119f234acee4b9430"},
@@ -523,7 +523,7 @@ test = ["pytest (>=6)"]
 name = "flatbuffers"
 version = "23.5.26"
 description = "The FlatBuffers serialization format for Python"
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "flatbuffers-23.5.26-py2.py3-none-any.whl", hash = "sha256:c0ff356da363087b915fde4b8b45bdda73432fc17cddb3c8157472eab1422ad1"},
@@ -599,7 +599,7 @@ woff = ["brotli (>=1.0.1)", "brotlicffi (>=0.8.0)", "zopfli (>=0.1.4)"]
 name = "fsspec"
 version = "2023.10.0"
 description = "File-system specification"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "fsspec-2023.10.0-py3-none-any.whl", hash = "sha256:346a8f024efeb749d2a5fca7ba8854474b1ff9af7c3faaf636a4548781136529"},
@@ -634,7 +634,7 @@ tqdm = ["tqdm"]
 name = "gast"
 version = "0.4.0"
 description = "Python AST that abstracts the underlying Python version"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
     {file = "gast-0.4.0-py3-none-any.whl", hash = "sha256:b7adcdd5adbebf1adf17378da5ba3f543684dbec47b1cda1f3997e573cd542c4"},
@@ -645,7 +645,7 @@ files = [
 name = "google-auth"
 version = "2.23.4"
 description = "Google Authentication Library"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "google-auth-2.23.4.tar.gz", hash = "sha256:79905d6b1652187def79d491d6e23d0cbb3a21d3c7ba0dbaa9c8a01906b13ff3"},
@@ -668,7 +668,7 @@ requests = ["requests (>=2.20.0,<3.0.0.dev0)"]
 name = "google-auth-oauthlib"
 version = "1.0.0"
 description = "Google Authentication Library"
-optional = false
+optional = true
 python-versions = ">=3.6"
 files = [
     {file = "google-auth-oauthlib-1.0.0.tar.gz", hash = "sha256:e375064964820b47221a7e1b7ee1fd77051b6323c3f9e3e19785f78ab67ecfc5"},
@@ -686,7 +686,7 @@ tool = ["click (>=6.0.0)"]
 name = "google-pasta"
 version = "0.2.0"
 description = "pasta is an AST-based Python refactoring library"
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "google-pasta-0.2.0.tar.gz", hash = "sha256:c9f2c8dfc8f96d0d5808299920721be30c9eec37f2389f28904f454565c8a16e"},
@@ -701,7 +701,7 @@ six = "*"
 name = "grpcio"
 version = "1.59.3"
 description = "HTTP/2-based RPC framework"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "grpcio-1.59.3-cp310-cp310-linux_armv7l.whl", hash = "sha256:aca028a6c7806e5b61e5f9f4232432c52856f7fcb98e330b20b6bc95d657bdcc"},
@@ -767,7 +767,7 @@ protobuf = ["grpcio-tools (>=1.59.3)"]
 name = "h5py"
 version = "3.10.0"
 description = "Read and write HDF5 files from Python"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "h5py-3.10.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:b963fb772964fc1d1563c57e4e2e874022ce11f75ddc6df1a626f42bd49ab99f"},
@@ -804,7 +804,7 @@ numpy = ">=1.17.3"
 name = "holoviews"
 version = "1.17.1"
 description = "Stop plotting your data - annotate your data and let it visualize itself."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "holoviews-1.17.1-py2.py3-none-any.whl", hash = "sha256:cdbb1ea362fd5dd1907c69b939c4d6a63d5225cdc4dd707a4d38d1544be6b11f"},
@@ -854,7 +854,7 @@ files = [
 name = "imageio"
 version = "2.32.0"
 description = "Library for reading and writing a wide range of image, video, scientific, and volumetric data formats."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "imageio-2.32.0-py3-none-any.whl", hash = "sha256:70e63a8955fb08242c9cbc4cdc40728ab892f76955b99cc6a0c5f304b4b84970"},
@@ -973,7 +973,7 @@ files = [
 name = "keras"
 version = "2.13.1"
 description = "Deep learning for humans."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "keras-2.13.1-py3-none-any.whl", hash = "sha256:5ce5f706f779fa7330e63632f327b75ce38144a120376b2ae1917c00fa6136af"},
@@ -1097,7 +1097,7 @@ files = [
 name = "lazy-loader"
 version = "0.3"
 description = "lazy_loader"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "lazy_loader-0.3-py3-none-any.whl", hash = "sha256:1e9e76ee8631e264c62ce10006718e80b2cfc74340d17d1031e0f84af7478554"},
@@ -1112,7 +1112,7 @@ test = ["pytest (>=7.4)", "pytest-cov (>=4.1)"]
 name = "libclang"
 version = "16.0.6"
 description = "Clang Python Bindings, mirrored from the official LLVM repo: https://github.com/llvm/llvm-project/tree/main/clang/bindings/python, to make the installation process easier."
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "libclang-16.0.6-1-py2.py3-none-manylinux2014_aarch64.whl", hash = "sha256:88bc7e7b393c32e41e03ba77ef02fdd647da1f764c2cd028e69e0837080b79f6"},
@@ -1165,7 +1165,7 @@ files = [
 name = "locket"
 version = "1.0.0"
 description = "File-based locks for Python on Linux and Windows"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
     {file = "locket-1.0.0-py2.py3-none-any.whl", hash = "sha256:b6c819a722f7b6bd955b80781788e4a66a55628b858d347536b7e81325a3a5e3"},
@@ -1176,7 +1176,7 @@ files = [
 name = "markdown"
 version = "3.5.1"
 description = "Python implementation of John Gruber's Markdown."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "Markdown-3.5.1-py3-none-any.whl", hash = "sha256:5874b47d4ee3f0b14d764324d2c94c03ea66bee56f2d929da9f2508d65e722dc"},
@@ -1321,7 +1321,7 @@ python-dateutil = ">=2.7"
 name = "multipledispatch"
 version = "1.0.0"
 description = "Multiple dispatch"
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "multipledispatch-1.0.0-py3-none-any.whl", hash = "sha256:0c53cd8b077546da4e48869f49b13164bebafd0c2a5afceb6bb6a316e7fb46e4"},
@@ -1332,7 +1332,7 @@ files = [
 name = "networkx"
 version = "3.1"
 description = "Python package for creating and manipulating graphs and networks"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "networkx-3.1-py3-none-any.whl", hash = "sha256:4f33f68cb2afcf86f28a45f43efc27a9386b535d567d2127f8f61d51dec58d36"},
@@ -1447,7 +1447,7 @@ test = ["matplotlib", "pytest", "pytest-cov"]
 name = "oauthlib"
 version = "3.2.2"
 description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
-optional = false
+optional = true
 python-versions = ">=3.6"
 files = [
     {file = "oauthlib-3.2.2-py3-none-any.whl", hash = "sha256:8139f29aac13e25d502680e9e19963e83f16838d48a0d71c287fe40e7067fbca"},
@@ -1463,7 +1463,7 @@ signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
 name = "opt-einsum"
 version = "3.3.0"
 description = "Optimizing numpys einsum function"
-optional = false
+optional = true
 python-versions = ">=3.5"
 files = [
     {file = "opt_einsum-3.3.0-py3-none-any.whl", hash = "sha256:2455e59e3947d3c275477df7f5205b30635e266fe6dc300e3d9f9646bfcea147"},
@@ -1492,7 +1492,7 @@ files = [
 name = "pandas"
 version = "2.0.3"
 description = "Powerful data structures for data analysis, time series, and statistics"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "pandas-2.0.3-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:e4c7c9f27a4185304c7caf96dc7d91bc60bc162221152de697c98eb0b2648dd8"},
@@ -1559,7 +1559,7 @@ xml = ["lxml (>=4.6.3)"]
 name = "panel"
 version = "0.14.4"
 description = "A high level app and dashboarding solution for Python."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "panel-0.14.4-py2.py3-none-any.whl", hash = "sha256:dd4fcf2fc7276cd3f0df110ce7a6197ac4040d74c4efdc8c092b23771c1f514d"},
@@ -1591,7 +1591,7 @@ ui = ["playwright", "pytest-playwright"]
 name = "param"
 version = "2.0.1"
 description = "Make your Python code clearer and more reliable by declaring Parameters."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "param-2.0.1-py3-none-any.whl", hash = "sha256:4bfc94c0e4127626fa833e30c71c91ea73e7675b80c26dbdd4a6e5a8f6dc46db"},
@@ -1612,7 +1612,7 @@ tests-full = ["cloudpickle", "gmpy", "ipython", "jsonschema", "nest-asyncio", "n
 name = "partd"
 version = "1.4.1"
 description = "Appendable key-value storage"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "partd-1.4.1-py3-none-any.whl", hash = "sha256:27e766663d36c161e2827aa3e28541c992f0b9527d3cca047e13fb3acdb989e6"},
@@ -1712,7 +1712,7 @@ testing = ["pytest", "pytest-benchmark"]
 name = "protobuf"
 version = "4.25.1"
 description = ""
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "protobuf-4.25.1-cp310-abi3-win32.whl", hash = "sha256:193f50a6ab78a970c9b4f148e7c750cfde64f59815e86f686c22e26b4fe01ce7"},
@@ -1732,7 +1732,7 @@ files = [
 name = "pyasn1"
 version = "0.5.0"
 description = "Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)"
-optional = false
+optional = true
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
 files = [
     {file = "pyasn1-0.5.0-py2.py3-none-any.whl", hash = "sha256:87a2121042a1ac9358cabcaf1d07680ff97ee6404333bacca15f76aa8ad01a57"},
@@ -1743,7 +1743,7 @@ files = [
 name = "pyasn1-modules"
 version = "0.3.0"
 description = "A collection of ASN.1-based protocols modules"
-optional = false
+optional = true
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
 files = [
     {file = "pyasn1_modules-0.3.0-py2.py3-none-any.whl", hash = "sha256:d3ccd6ed470d9ffbc716be08bd90efbd44d0734bc9303818f7336070984a162d"},
@@ -1757,7 +1757,7 @@ pyasn1 = ">=0.4.6,<0.6.0"
 name = "pyct"
 version = "0.5.0"
 description = "Python package common tasks for users (e.g. copy examples, fetch data, ...)"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "pyct-0.5.0-py2.py3-none-any.whl", hash = "sha256:a4038a8885059ab8cac6f946ea30e0b5e6bdbe0b92b6723f06737035f9d65e8c"},
@@ -1870,7 +1870,7 @@ files = [
 name = "pyviz-comms"
 version = "3.0.0"
 description = "A JupyterLab extension for rendering HoloViz content."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "pyviz_comms-3.0.0-py3-none-any.whl", hash = "sha256:91c967151b1e4d436c458c147a31991a42fbe7567e49176e4eb5b8dc8e20f1ff"},
@@ -1889,7 +1889,7 @@ tests = ["flake8", "pytest"]
 name = "pywavelets"
 version = "1.4.1"
 description = "PyWavelets, wavelet transform module"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "PyWavelets-1.4.1-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:d854411eb5ee9cb4bc5d0e66e3634aeb8f594210f6a1bed96dbed57ec70f181c"},
@@ -1926,7 +1926,7 @@ numpy = ">=1.17.3"
 name = "pyyaml"
 version = "6.0.1"
 description = "YAML parser and emitter for Python"
-optional = false
+optional = true
 python-versions = ">=3.6"
 files = [
     {file = "PyYAML-6.0.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d858aa552c999bc8a8d57426ed01e40bef403cd8ccdd0fc5f6f04a00414cac2a"},
@@ -1996,7 +1996,7 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 name = "requests-oauthlib"
 version = "1.3.1"
 description = "OAuthlib authentication support for Requests."
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
     {file = "requests-oauthlib-1.3.1.tar.gz", hash = "sha256:75beac4a47881eeb94d5ea5d6ad31ef88856affe2332b9aafb52c6452ccf0d7a"},
@@ -2014,7 +2014,7 @@ rsa = ["oauthlib[signedtoken] (>=3.0.0)"]
 name = "rsa"
 version = "4.9"
 description = "Pure-Python RSA implementation"
-optional = false
+optional = true
 python-versions = ">=3.6,<4"
 files = [
     {file = "rsa-4.9-py3-none-any.whl", hash = "sha256:90260d9058e514786967344d0ef75fa8727eed8a7d2e43ce9f4bcf1b536174f7"},
@@ -2028,7 +2028,7 @@ pyasn1 = ">=0.1.3"
 name = "scikit-image"
 version = "0.21.0"
 description = "Image processing in Python"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "scikit_image-0.21.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:978ac3302252155a8556cdfe067bad2d18d5ccef4e91c2f727bc564ed75566bc"},
@@ -2163,7 +2163,7 @@ test = ["asv", "gmpy2", "mpmath", "pooch", "pytest", "pytest-cov", "pytest-timeo
 name = "seaborn"
 version = "0.13.0"
 description = "Statistical data visualization"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "seaborn-0.13.0-py3-none-any.whl", hash = "sha256:70d740828c48de0f402bb17234e475eda687e3c65f4383ea25d0cc4728f7772e"},
@@ -2184,7 +2184,7 @@ stats = ["scipy (>=1.7)", "statsmodels (>=0.12)"]
 name = "setuptools"
 version = "68.2.2"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "setuptools-68.2.2-py3-none-any.whl", hash = "sha256:b454a35605876da60632df1a60f736524eb73cc47bbc9f3f1ef1b644de74fd2a"},
@@ -2407,7 +2407,7 @@ widechars = ["wcwidth"]
 name = "tbb"
 version = "2019.0"
 description = "High level abstract threading library"
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "tbb-2019.0-py2-none-win_amd64.whl", hash = "sha256:0bb8474e85c5640ad76f90ee1e1e73a186528df41fdf8bc4b9803203828e32fb"},
@@ -2420,7 +2420,7 @@ files = [
 name = "tensorboard"
 version = "2.13.0"
 description = "TensorBoard lets you watch Tensors Flow"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "tensorboard-2.13.0-py3-none-any.whl", hash = "sha256:ab69961ebddbddc83f5fa2ff9233572bdad5b883778c35e4fe94bf1798bd8481"},
@@ -2444,7 +2444,7 @@ wheel = ">=0.26"
 name = "tensorboard-data-server"
 version = "0.7.2"
 description = "Fast data loading for TensorBoard"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "tensorboard_data_server-0.7.2-py3-none-any.whl", hash = "sha256:7e0610d205889588983836ec05dc098e80f97b7e7bbff7e994ebb78f578d0ddb"},
@@ -2456,7 +2456,7 @@ files = [
 name = "tensorflow"
 version = "2.13.1"
 description = "TensorFlow is an open source machine learning framework for everyone."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "tensorflow-2.13.1-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:17b9a82d69abc487ebad503d61acd11fb24f3b0105be669b5319e55f90f0ca21"},
@@ -2508,7 +2508,7 @@ wrapt = ">=1.11.0"
 name = "tensorflow-estimator"
 version = "2.13.0"
 description = "TensorFlow Estimator."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "tensorflow_estimator-2.13.0-py2.py3-none-any.whl", hash = "sha256:6f868284eaa654ae3aa7cacdbef2175d0909df9fcf11374f5166f8bf475952aa"},
@@ -2518,7 +2518,7 @@ files = [
 name = "tensorflow-io-gcs-filesystem"
 version = "0.34.0"
 description = "TensorFlow IO"
-optional = false
+optional = true
 python-versions = ">=3.7, <3.12"
 files = [
     {file = "tensorflow_io_gcs_filesystem-0.34.0-cp310-cp310-macosx_10_14_x86_64.whl", hash = "sha256:d831702fbb270996b27cda7fde06e0825b2ea81fd8dd3ead35242f4f8b3889b8"},
@@ -2550,45 +2550,10 @@ tensorflow-gpu = ["tensorflow-gpu (>=2.13.0,<2.14.0)"]
 tensorflow-rocm = ["tensorflow-rocm (>=2.13.0,<2.14.0)"]
 
 [[package]]
-name = "tensorflow-macos"
-version = "2.13.1"
-description = "TensorFlow is an open source machine learning framework for everyone."
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "tensorflow_macos-2.13.1-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:7a09d250532c87083b00396b0367baa73558a50d0bd8982907297422858f6af6"},
-    {file = "tensorflow_macos-2.13.1-cp311-cp311-macosx_12_0_arm64.whl", hash = "sha256:8f95c332ee60a32691963adab31b6afa29a2302de05fc4cd6009cd96866a6886"},
-    {file = "tensorflow_macos-2.13.1-cp39-cp39-macosx_12_0_arm64.whl", hash = "sha256:f2bade2725c5a81dc0d96acd1c5b8475593bc9bdf1da0055bd72a09a501d7866"},
-]
-
-[package.dependencies]
-absl-py = ">=1.0.0"
-astunparse = ">=1.6.0"
-flatbuffers = ">=23.1.21"
-gast = ">=0.2.1,<=0.4.0"
-google-pasta = ">=0.1.1"
-grpcio = ">=1.24.3,<2.0"
-h5py = ">=2.9.0"
-keras = ">=2.13.1,<2.14"
-libclang = ">=13.0.0"
-numpy = ">=1.22,<=1.24.3"
-opt-einsum = ">=2.3.2"
-packaging = "*"
-protobuf = ">=3.20.3,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<5.0.0dev"
-setuptools = "*"
-six = ">=1.12.0"
-tensorboard = ">=2.13,<2.14"
-tensorflow-estimator = ">=2.13.0,<2.14"
-tensorflow-io-gcs-filesystem = {version = ">=0.23.1", markers = "platform_machine != \"arm64\" or platform_system != \"Darwin\""}
-termcolor = ">=1.1.0"
-typing-extensions = ">=3.6.6,<4.6.0"
-wrapt = ">=1.11.0"
-
-[[package]]
 name = "tensorflow-probability"
 version = "0.20.1"
 description = "Probabilistic modeling and statistical inference in TensorFlow"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "tensorflow_probability-0.20.1-py2.py3-none-any.whl", hash = "sha256:fc10597d2b1a26ecdfae2086307944dd7f1082a0e8a2f615b56c1f0121a7763d"},
@@ -2611,7 +2576,7 @@ tfds = ["tensorflow-datasets (>=2.2.0)"]
 name = "termcolor"
 version = "2.3.0"
 description = "ANSI color formatting for output in terminal"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "termcolor-2.3.0-py3-none-any.whl", hash = "sha256:3afb05607b89aed0ffe25202399ee0867ad4d3cb4180d98aaf8eefa6a5f7d475"},
@@ -2636,7 +2601,7 @@ files = [
 name = "tifffile"
 version = "2023.7.10"
 description = "Read and write TIFF files"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "tifffile-2023.7.10-py3-none-any.whl", hash = "sha256:94dfdec321ace96abbfe872a66cfd824800c099a2db558443453eebc2c11b304"},
@@ -2664,7 +2629,7 @@ files = [
 name = "toolz"
 version = "0.12.0"
 description = "List processing tools and functional utilities"
-optional = false
+optional = true
 python-versions = ">=3.5"
 files = [
     {file = "toolz-0.12.0-py3-none-any.whl", hash = "sha256:2059bd4148deb1884bb0eb770a3cde70e7f954cfbbdc2285f1f2de01fd21eb6f"},
@@ -2675,7 +2640,7 @@ files = [
 name = "tornado"
 version = "6.3.3"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
-optional = false
+optional = true
 python-versions = ">= 3.8"
 files = [
     {file = "tornado-6.3.3-cp38-abi3-macosx_10_9_universal2.whl", hash = "sha256:502fba735c84450974fec147340016ad928d29f1e91f49be168c0a4c18181e1d"},
@@ -2715,7 +2680,7 @@ telegram = ["requests"]
 name = "typing-extensions"
 version = "4.5.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "typing_extensions-4.5.0-py3-none-any.whl", hash = "sha256:fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4"},
@@ -2726,7 +2691,7 @@ files = [
 name = "tzdata"
 version = "2023.3"
 description = "Provider of IANA time zone data"
-optional = false
+optional = true
 python-versions = ">=2"
 files = [
     {file = "tzdata-2023.3-py2.py3-none-any.whl", hash = "sha256:7e65763eef3120314099b6939b5546db7adce1e7d6f2e179e3df563c70511eda"},
@@ -2753,7 +2718,7 @@ zstd = ["zstandard (>=0.18.0)"]
 name = "webencodings"
 version = "0.5.1"
 description = "Character encoding aliases for legacy web content"
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "webencodings-0.5.1-py2.py3-none-any.whl", hash = "sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"},
@@ -2764,7 +2729,7 @@ files = [
 name = "werkzeug"
 version = "3.0.1"
 description = "The comprehensive WSGI web application library."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "werkzeug-3.0.1-py3-none-any.whl", hash = "sha256:90a285dc0e42ad56b34e696398b8122ee4c681833fb35b8334a095d82c56da10"},
@@ -2781,7 +2746,7 @@ watchdog = ["watchdog (>=2.3)"]
 name = "wheel"
 version = "0.41.3"
 description = "A built-package format for Python"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "wheel-0.41.3-py3-none-any.whl", hash = "sha256:488609bc63a29322326e05560731bf7bfea8e48ad646e1f5e40d366607de0942"},
@@ -2795,7 +2760,7 @@ test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
 name = "wrapt"
 version = "1.16.0"
 description = "Module for decorators, wrappers and monkey patching."
-optional = false
+optional = true
 python-versions = ">=3.6"
 files = [
     {file = "wrapt-1.16.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:ffa565331890b90056c01db69c0fe634a776f8019c143a5ae265f9c6bc4bd6d4"},
@@ -2874,7 +2839,7 @@ files = [
 name = "xarray"
 version = "2023.1.0"
 description = "N-D labeled arrays and datasets in Python"
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "xarray-2023.1.0-py3-none-any.whl", hash = "sha256:7e530b1deafdd43e5c2b577d0944e6b528fbe88045fd849e49a8d11871ecd522"},
@@ -2909,7 +2874,12 @@ files = [
 docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (<7.2.5)", "sphinx (>=3.5)", "sphinx-lint"]
 testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-ignore-flaky", "pytest-mypy (>=0.9.1)", "pytest-ruff"]
 
+[extras]
+parametric-umap = ["tensorflow", "tensorflow-probability"]
+plot = ["bokeh", "colorcet", "datashader", "holoviews", "matplotlib", "pandas", "scikit-image", "seaborn"]
+tbb = ["tbb"]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8,<3.12"
-content-hash = "0593ebeb3af8e5b9ca5c479235dad743eeb094fc91848ec9037de1f6f41d7d6a"
+content-hash = "1dfc0b1bad6b9cc315a46e22794030ee90c1f8312a7c32028e8cd20a00fa63aa"
